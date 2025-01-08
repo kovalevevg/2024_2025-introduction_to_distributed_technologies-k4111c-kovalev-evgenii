@@ -3,7 +3,7 @@
 
 # Ход работы
 Создади м конфигурацию deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master, в которые передадим переменные REACT_APP_USERNAME и REACT_APP_COMPANY_NAME:
-'''
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -28,11 +28,11 @@ spec:
             value: "Kovalev Evgenii"
           - name: REACT_APP_COMPANY_NAME
             value: "evkovalev"
-'''
+```
 
 Добавим следом конфигурацию сервиса:
 
-'''
+```
 apiVersion: v1
 kind: Service
 metadata:
@@ -45,11 +45,11 @@ spec:
     port: 80
     targetPort: 3000
   type: NodePort 
-'''
+```
 
 Применим менифест и развертывание:
-'''minikube kubectl -- apply -f lab2-deployment.yaml'''
-'''minikube kubectl -- apply -f service.yaml'''
+```minikube kubectl -- apply -f lab2-deployment.yaml```
+```minikube kubectl -- apply -f service.yaml```
 <img width="616" alt="image" src="https://github.com/user-attachments/assets/f4782a27-edd9-400d-95c2-81d9a7143d9f" />
 
 Проверим состояние:
