@@ -57,6 +57,10 @@ spec:
 в которой найдем токен
 <img width="1728" alt="Снимок экрана 2025-01-07 в 14 17 35" src="https://github.com/user-attachments/assets/a4420f1d-1c51-49dd-a8fd-1f91d18fa217" />
 
+## Схема
+<img width="498" alt="Снимок экрана 2025-01-08 в 17 23 41" src="https://github.com/user-attachments/assets/fb1ae0ba-7a76-441d-af37-1d1736222267" />
+
+
 ## Вывод
 В ходе лабораторной работы мы познакомились с инструментами Minikube и Docker, а также развернули свой Vault под.
 
