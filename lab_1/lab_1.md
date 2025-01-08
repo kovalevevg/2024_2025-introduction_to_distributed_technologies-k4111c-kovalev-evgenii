@@ -39,7 +39,9 @@ spec:
       - containerPort: 8200
 ```
 Применяем манифест
-```kubectl apply -f lab_1.yaml```
+```minikube kubectl -- apply -f lab_1.yaml```
+<img width="562" alt="Снимок экрана 2025-01-07 в 14 09 14" src="https://github.com/user-attachments/assets/5c04ad04-3ead-4493-9fea-8e0b420103bc" />
+
 
 Создаем кластер, который доступен из вне 
 ```minikube kubectl -- expose pod vault --type=NodePort --port=8200```
