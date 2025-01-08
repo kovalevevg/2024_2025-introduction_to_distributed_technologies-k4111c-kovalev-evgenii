@@ -1,7 +1,20 @@
-# Цель работы 
+University: [ITMO University](https://itmo.ru/ru/)
+Faculty: [FICT](https://fict.itmo.ru/)
+Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
+Year: 2024/2025
+Group: K4111c
+Author: Kovalev Evgenii Kovalev
+Lab: Lab1
+Date of create: 8.12.2025
+Date of finished: 8.12.2025
+
+# Лабораторная работа №2
+"Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса."
+
+## Цель работы 
 Ознакомиться с типами "контроллеров" развертывания контейнеров, ознакомится с сетевыми сервисами и развернуть свое веб приложение.
 
-# Ход работы
+## Ход работы
 Создади м конфигурацию deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master, в которые передадим переменные REACT_APP_USERNAME и REACT_APP_COMPANY_NAME:
 ```
 apiVersion: apps/v1
