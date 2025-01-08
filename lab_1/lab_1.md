@@ -22,6 +22,7 @@ Date of finished: TBD
 Запускаем minikube при помощи команды:
 
 ```minikube start --driver=docker```
+<img width="775" alt="Снимок экрана 2025-01-07 в 13 49 29" src="https://github.com/user-attachments/assets/c3f1f05e-80c1-4509-b018-266597283c3d" />
 
 lab_1.yaml
 ```
@@ -45,13 +46,16 @@ spec:
 
 Создаем кластер, который доступен из вне 
 ```minikube kubectl -- expose pod vault --type=NodePort --port=8200```
+<img width="723" alt="Снимок экрана 2025-01-07 в 14 09 49" src="https://github.com/user-attachments/assets/bc862e2e-ffac-49bc-b5c5-69a6c52e6da5" />
 
 Прокидываем порт компьютера в контейнере, чтобы попасть по [ссылке(http://localhost:8200/ui/vault/secrets)
 ```minikube kubectl -- port-forward service/vault 8200:8200```
+<img width="701" alt="Снимок экрана 2025-01-07 в 14 14 15" src="https://github.com/user-attachments/assets/a3b2e0ce-1bbb-4524-b9a0-61efb9865348" />
 
 Чтобы найти токен для авторизации, введем команду
 ```kubectl logs vault```
 в которой найдем токен
+<img width="1728" alt="Снимок экрана 2025-01-07 в 14 17 35" src="https://github.com/user-attachments/assets/a4420f1d-1c51-49dd-a8fd-1f91d18fa217" />
 
 ## Вывод
 В ходе лабораторной работы мы познакомились с инструментами Minikube и Docker, а также развернули свой Vault под.
