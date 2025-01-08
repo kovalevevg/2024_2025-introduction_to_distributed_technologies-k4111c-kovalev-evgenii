@@ -88,3 +88,6 @@ spec:
 Проверяем логи:
 <img width="667" alt="image" src="https://github.com/user-attachments/assets/3c5ac99f-4137-4acb-aa84-36c046fe122a" />
 
+## Схема
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/72c0f54d-f85a-4a90-a771-83c9e078e850" />
+
