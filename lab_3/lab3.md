@@ -51,3 +51,7 @@ Cоздадим для него Secret в minikube:
 
 Чтобы иметь возможность заходить по FQDN, необходимо добавить запись о нем в ```/etc/hosts```
 <img width="697" alt="image" src="https://github.com/user-attachments/assets/9aa57182-7f1e-4448-bdfc-570786cd4e32" />
+
+Схема:
+<img width="627" alt="image" src="https://github.com/user-attachments/assets/e5fd71bd-b17d-42de-b089-7f10eac841aa" />
+
