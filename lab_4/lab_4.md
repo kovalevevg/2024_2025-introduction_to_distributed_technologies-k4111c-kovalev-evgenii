@@ -35,8 +35,8 @@ Date of finished: 16.12.2025
 Удалим ippool
 ```ippool.crd.projectcalico.org "default-ipv4-ippool" deleted```
 
+Добавим метки для нод:
 ```kubectl label node minikube location=east```
-
 ```kubectl label node minikube location=west```
 
 Создим deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передать переменные в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
